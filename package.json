@@ -1,0 +1,14 @@
+{
+  "name": "09-persistence",
+  "version": "1.0.0",
+  "description": "seattle-javascript-401d24, 09-persistence",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose --coverage",
+    "test-watch": "jest --watchAll --verbose --coverage",
+    "lint": "eslint **/*.js",
+    "start": "node index.js"
+  },
+  "author": "Ovidiu Parasca",
+  "license": "ISC"
+}
