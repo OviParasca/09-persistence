@@ -10,5 +10,12 @@
     "start": "node index.js"
   },
   "author": "Ovidiu Parasca",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "jest": "^22.4.4",
+    "nodemon": "^1.17.5",
+    "uuid": "^3.2.1"
+  }
 }
