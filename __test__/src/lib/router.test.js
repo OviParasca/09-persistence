@@ -26,13 +26,24 @@ describe('Router', () => {
   });
 
   it('can route get requests', () => {
-    let expected = 'get/test';
-    router.get('/test', () => expected);
-    let req = { method: 'GET', url: 'http://localhost/test?john=bald' };
+    let expected = 'get/notes';
+    router.get('/notes', () => expected);
+    
+    let req = { method: 'GET', url: 'http://localhost/notes?id=61684005-d101-4b78-9759-a996ed47c5ad'};
     let res = {};
     return router.route(req,res)
       .then( result => expect(result).toEqual(expected));
   });
 
+  // it('can get a 400 response for GetOne()', (done) => {
+  //   let expected = 'get/api/v1/notes';
+  //   router.get('api/v1/notes', () => expected);
+  //   let req = { method: 'GET', url: 'http://localhost/api/v1/notes?id='};
+  //   let res = {};
+  //   return router.route(req, res)
+  //     .then(res => {
+  //       expect(res.status).toEqual(400);
+  //     });
+  // });
 
 });
